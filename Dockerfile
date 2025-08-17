@@ -16,6 +16,8 @@ RUN apt install -y net-tools
 RUN apt install -y network-manager
 
 RUN apt install -y pciutils
+RUN apt install -y nano
+RUN apt install -y curl
 
 # needed by knod-static-nodes to create a list of static device nodes
 RUN apt install -y kmod
