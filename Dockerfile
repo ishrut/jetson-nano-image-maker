@@ -13,6 +13,9 @@ RUN apt install -y parted
 
 # ifconfig
 RUN apt install -y net-tools
+RUN apt install -y network-manager
+
+RUN apt install -y lspci
 
 # needed by knod-static-nodes to create a list of static device nodes
 RUN apt install -y kmod
