@@ -54,7 +54,7 @@ RUN rm -rf /opt/nvidia/l4t-packages
 
 COPY root/ /
 
-RUN useradd -ms /bin/bash jetson
-RUN echo 'jetson:jetson' | chpasswd
+RUN useradd -ms /bin/bash ishrut
+RUN echo 'ishrut:jetson' | chpasswd
 
-RUN usermod -a -G sudo jetson
+RUN usermod -a -G sudo ishrut
